@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-05-2025 a las 19:30:13
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Tiempo de generaciÃ³n: 20-05-2025 a las 19:30:13
+-- VersiÃ³n del servidor: 10.4.32-MariaDB
+-- VersiÃ³n de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `dad2_77168527p_49305680m`
+-- Base de datos: `dad2`
 --
 
 -- --------------------------------------------------------
@@ -42,7 +42,7 @@ CREATE TABLE `espacios` (
 
 INSERT INTO `espacios` (`id`, `ciudad`, `edificio`, `planta`, `numeroPuerta`, `descripcion`) VALUES
 (23, 'Almeria', 'Alcazaba', 0, 1, 'Plaza de Armas'),
-(24, 'Murcia', 'Cartagena Ucam Pabellon10', 2, 5, 'Clase de prácticas'),
+(24, 'Murcia', 'Cartagena Ucam Pabellon10', 2, 5, 'Clase de prÃ¡cticas'),
 (25, 'Murcia', 'Museo Salzillo', 1, 15, 'Sala Salzillo');
 
 -- --------------------------------------------------------
@@ -64,10 +64,10 @@ CREATE TABLE `reservas` (
 --
 
 INSERT INTO `reservas` (`id_reserva`, `id_espacio`, `id_usuario`, `fecha_inicio`, `fecha_fin`) VALUES
-(20, 23, 'ijfrias7@alu.ucam.edu', '2025-05-24 06:15:00', '2025-05-24 09:00:00'),
-(21, 24, 'ijfrias7@alu.ucam.edu', '2025-05-30 15:30:00', '2025-05-30 16:30:00'),
-(22, 24, 'dmartinez80@alu.ucam.edu', '2025-05-30 12:00:00', '2025-05-30 14:00:00'),
-(23, 25, 'dmartinez80@alu.ucam.edu', '2025-05-31 05:00:00', '2025-05-31 07:20:00');
+(20, 23, 'iker@gmail.com', '2025-05-24 06:15:00', '2025-05-24 09:00:00'),
+(21, 24, 'iker@gmail.com', '2025-05-30 15:30:00', '2025-05-30 16:30:00'),
+(22, 24, 'usuario@gmail.com', '2025-05-30 12:00:00', '2025-05-30 14:00:00'),
+(23, 25, 'usuario@gmail.com', '2025-05-31 05:00:00', '2025-05-31 07:20:00');
 
 -- --------------------------------------------------------
 
@@ -88,11 +88,11 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`email`, `nombre`, `password`, `rol`) VALUES
 ('admin', 'Administrador', 'admin', 'ADMIN'),
-('dmartinez80@alu.ucam.edu', 'David Martinez', 'david', 'USUARIO'),
-('ijfrias7@alu.ucam.edu', 'Iker Frias', 'iker', 'USUARIO');
+('usuario@gmail.com', 'Usuario basico', 'usuario', 'USUARIO'),
+('iker@gmail.com', 'Iker Frias', 'iker', 'USUARIO');
 
 --
--- Índices para tablas volcadas
+-- Ãndices para tablas volcadas
 --
 
 --
